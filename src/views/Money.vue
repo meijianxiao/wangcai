@@ -1,7 +1,7 @@
 <template>
-  <div>Money.vue
-  <Nav/>
-  </div>
+    <Layout>
+      <p>Money-view</p>
+    </Layout>
 </template>
 
 <script lang="ts">
