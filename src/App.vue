@@ -16,13 +16,20 @@
   text-align: center;
   color: #2c3e50;
 }
-
+body{
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
 #nav {
   padding: 30px;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+
 
     &.router-link-exact-active {
       color: #42b983;
