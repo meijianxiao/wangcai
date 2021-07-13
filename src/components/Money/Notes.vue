@@ -9,12 +9,15 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import {Component} from "vue-property-decorator";
+import {Component,Watch} from "vue-property-decorator";
 
 @Component
 export default class Notes extends Vue {
   value = ''
-
+  @Watch('value')
+  onValueChanged(value:string){
+    this.$emit('update:value',value)
+  }
   // onInput(event: KeyboardEvent) {
   //   const input = event.target as HTMLInputElement
   //   this.value = input.value
