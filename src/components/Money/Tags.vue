@@ -46,7 +46,7 @@ export default  class Tags extends Vue{
   flex-direction: column-reverse;
   > .current {
     display: flex;
-
+    flex-wrap: wrap;
     > li {
       $bg:#d8d9d9;
       background: $bg;
