@@ -2,7 +2,7 @@
   <div>
     <label class="formItem">
       <span class="name">{{ this.filename }}</span>
-      <input type="text" :value="value" @input="onValueChanged($event.target.value)" :placeholder="this.placeholder">
+      <input type="text" :value="value" @input="onValueChanged($event.target.value)" :placeholder="placeholder">
     </label>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default class FormItem extends Vue {
 
   @Prop({required: true}) filename!:string
   @Prop()placeholder?:string
-  @Watch('value')
+
   onValueChanged(value: string) {
     this.$emit('update:value', value)
   }

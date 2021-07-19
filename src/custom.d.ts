@@ -31,3 +31,10 @@ interface Window {
     //     createRecord: (record: RecordItem) => void
     // }
 }
+
+
+type RootState = {
+    recordList: RecordItem[],
+    tagList: Tag[]
+    currentTag?: Tag
+}
