@@ -38,3 +38,5 @@ type RootState = {
     tagList: Tag[]
     currentTag?: Tag
 }
+
+type DataSourceItem = { text: string, value: string }
