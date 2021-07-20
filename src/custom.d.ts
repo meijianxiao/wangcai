@@ -1,9 +1,9 @@
 type RecordItem = {
-    tags: string[]
+    tags: Tag[]
     notes: string
     type: string
     amount: number
-    createdAt?: Date
+    createdAt?: string
 }
 
 type Tag = {
@@ -40,3 +40,9 @@ type RootState = {
 }
 
 type DataSourceItem = { text: string, value: string }
+
+type Result = {
+    title:string
+    total?:number
+    items:RecordItem[]
+}[]
